@@ -11,12 +11,13 @@ Walkthrough of installing Nginx Webserver
 - [Resources](#resoureces)
 
 ### Step One - Installing Nginx
-`sudo apt update`<br>
-`sudo apt install nginx`<br>
 If you have UFW on you should allow HTTP with:<br>
 `sudo ufw allow 'Nginx Full'`
-Next we need to install Nginx.<br>
 
+
+Next we need to install Nginx.<br>
+`sudo apt update`<br>
+`sudo apt install nginx`<br>
 
 Nginx should now be fully operational, to check.<br>
 `sudo systemctl enable nginx` - To set up nginx to start up on reboot.<br>
