@@ -56,12 +56,12 @@ Now with a non-root user and ssh keys we can finally disable password authentica
 `sudo systemctl restart ssh`
 
 ### Step 7 - Setting up UFW
-Install UFW, by default there are no rules set. We should allow SSH to prevent locking ourselves out.
-`sudo apt install ufw`
-`sudo ufw allow ssh`
+Install UFW, by default there are no rules set. We should allow SSH to prevent locking ourselves out.<br>
+`sudo apt install ufw`<br>
+`sudo ufw allow ssh`<br>
 
-After confirming your have a rule to allow incoming SSH connections, you can enable the firewall with:
-`sudo ufw enable`
+After confirming your have a rule to allow incoming SSH connections, you can enable the firewall with:<br>
+`sudo ufw enable`<br>
 
 ### Step 8 - Setting up Fail2ban 
 If you didn't follow step 4, the next step is a must to prevent brute force password attacks on your server.
@@ -81,7 +81,8 @@ With our jail in place we can now enable fail2ban as service so it will run on s
 I found these resources helpful.<br>
 [Digital Ocean - SSH Essentials](./resources/DigitalOcean_SSH_Essentials.md)<br>
 [Digital Ocean - SSH Keys](./resources/DigitalOcean_SSH_Keys.md)<br>
-[Github - SSH Agent](./resources/Github_SSH_Agent.md)
+[Github - SSH Agent](./resources/Github_SSH_Agent.md)<br>
+[Setting up UFW](./resources/UFW_Setup.md)
 
 
 
