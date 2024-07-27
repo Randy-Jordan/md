@@ -4,7 +4,11 @@ Walkthrough of installing Postgresql database.
 ## Table of Contents
 
 - [Step 1 - Installing Postgresql](#step-1---installing-postgresql)
--
+- [Step 2 - Create user and database.](#step-2---create-user-and-database)
+- [Step 3 - Configure postgresql](#step-3---configure-postgresql)
+- [Step 4 - Configure access](#step-3---configure-access)
+
+
 
 ### Step 1 - Installing Postgresql
 `sudo apt-get update`<br>
@@ -31,7 +35,7 @@ Next, change the following variables as per your requirement:<br>
 `password_encryption = scram-sha-256`<br>
 `sudo systemctl restart postgresql`<br>
 
-### Step 5 - Configure Access 
+### Step 4 - Configure Access 
 At this point, your PostgreSQL setup and ready for your app user, verify authentication settings in /etc/postgresql/14/main/pg_hba.conf file. 
 
 PostgreSQL accepts all local connections by defaults.<br>
