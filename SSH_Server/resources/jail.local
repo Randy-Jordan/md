@@ -1,0 +1,10 @@
+[sshd]
+enabled  = true
+filter   = sshd
+port     = ssh
+backend = systemd 
+logpath  = /var/log/auth.log
+maxretry = 3
+findtime = 300
+bantime  = 360000
+ignoreip = 127.0.0.1
